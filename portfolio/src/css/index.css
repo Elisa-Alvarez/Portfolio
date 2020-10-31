@@ -260,6 +260,10 @@ section {
   color: #ffffff;
   cursor: pointer;
 }
+.project-wrapper {
+  overflow-y: scroll;
+  height: 94vh;
+}
 h1 {
   text-align: center;
   font-size: 2rem;
@@ -267,15 +271,16 @@ h1 {
 }
 .project_container {
   display: flex;
+  height: fit-content;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 100vh;
   margin: 1rem;
   padding: 1rem;
 }
 .project_container .project_card {
-  width: 35%;
-  height: 50vh;
+  width: 45%;
+  height: fit-content;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -291,12 +296,23 @@ h1 {
 }
 .project_container .project_card img {
   width: 100%;
+  object-fit: cover;
 }
 .project_container .project_card .decription {
   width: 50%;
 }
+.project_container .project_card .date {
+  margin-top: 1.5rem;
+}
+.project_container .project_card .github {
+  margin-top: 0.7rem;
+}
+.project_container .project_card .github .logo {
+  width: 8%;
+}
 body {
   color: aliceblue;
+  overflow: hidden;
 }
 .contact-container {
   text-align: center ;

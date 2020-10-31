@@ -1,3 +1,7 @@
+.project-wrapper{
+    overflow-y: scroll;
+    height: 94vh;
+}
 h1{
     text-align: center;
     font-size: 2rem;
@@ -6,16 +10,17 @@ h1{
 
 .project_container{
     display: flex;
+    height: fit-content;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 100vh;
     margin: 1rem;
     padding: 1rem;
     
     
     .project_card{
-        width: 35%;
-        height: 50vh;
+        width: 45%;
+        height: fit-content;
+        margin-top: 1rem;
         margin-bottom: 1rem;
         text-align: center;
         a{
@@ -31,10 +36,20 @@ h1{
 
         img{
             width: 100%;
-            
+            object-fit: cover;
         }
+
         .decription{
             width: 50%;
+        }
+        .date{
+            margin-top: 1.5rem;
+        }
+        .github{
+            margin-top: 0.7rem;
+            .logo{
+                width: 8%;
+            }
         }
    }
 }
