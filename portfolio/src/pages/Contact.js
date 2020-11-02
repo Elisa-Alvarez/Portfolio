@@ -1,8 +1,23 @@
 import React from 'react'
-import NavBar from '../components/Navbar'
+import emailjs from 'emailjs-com';
+
 
 
 export default function Contact (){
+  
+   function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_7s6yns7', 'template_bhvoxkd', e.target, 'user_CPQ3weaRVKbdeKbsXNFTW')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    e.target.reset()
+  }
+
     return(
         <>
         <div className="contact-container">
@@ -15,11 +30,13 @@ export default function Contact (){
                 <a target="_blank" href='https://twitter.com/ElisaAl39167236'><img className="twitter" src="https://i.pinimg.com/originals/b7/91/26/b79126d537c628d7ac5429f7f84ffc8e.png"/></a>
                 </div>
                 <span/>
-            <form>
+            <form onSubmit={sendEmail}>
                 <label>Email Me</label>
-               <input type="username" name="name" placeholder="Full Name" className="full_name" />
-               <input type="text" name='cc'placeholder="Company/Subject" className="subject"/>
-               <input type="text" name="message" placeholder="message" className="description" />
+               <input type="text" name="name" placeholder="Contact Name"className="full_name" />
+               <input type="email" name='email'placeholder="Email" className="email"/>
+               <input type="text" name='subject'placeholder="Subject" className="subject"/>
+               <input type="text" name="message" placeholder="Message"  className="description" />
+               <input type="submit" value="Send" />
             </form>
             </div>
         </div>
