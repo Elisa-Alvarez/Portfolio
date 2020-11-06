@@ -1,5 +1,4 @@
-import React,{useState} from 'react';
-// import {Link} from 'react-router-dom'
+import React from 'react';
 import { Link } from "react-scroll";
 import Navbar from '../components/Navbar';
 
@@ -10,7 +9,8 @@ function Home (){
 
 
      return(
-         <div className="home-page">
+         
+         <div id="top-page" className="home-page">
              <section className="home-title">
                  <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1132&q=80" alt="Elia Alvarez Full Stack Web Developer" />
                 <div className="title">

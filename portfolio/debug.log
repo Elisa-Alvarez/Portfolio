@@ -21,3 +21,4 @@
 [1030/204821.770:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\bekah\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\36a8eb94-4fb2-425a-b01f-8b5b53472291: The system cannot find the path specified. (0x3)
 [1030/204821.771:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\bekah\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\cc3d2226-aae3-4927-a0c0-91639ef82048: The system cannot find the path specified. (0x3)
 [1031/005202.269:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1101/192253.106:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
