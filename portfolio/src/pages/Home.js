@@ -9,13 +9,12 @@ function Home (){
 
 
      return(
-         
          <div id="top-page" className="home-page">
-             <section className="home-title">
-                 <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1132&q=80" alt="Elia Alvarez Full Stack Web Developer" />
+            <section className="home-title">
+                 <img className='home-img'src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1132&q=80" alt="Elia Alvarez Full Stack Web Developer" />
                 <div className="title">
                  <h1>Elisa Alvarez</h1>
-                 <span>Full Stack Developer</span>
+                 <p>Full Stack Developer</p>
                  <Link activeClass="active" to="section-about" spy={true}  smooth={true}  duration={1000}>
                      Learn more
                 </Link>
@@ -57,10 +56,9 @@ function Home (){
                             </a>     
                         </div>
                       </div>
-                      <Navbar />
-                  </section>
- 
-         </div>
+                </section>
+             </div>
+    
      )
 }
 export default Home

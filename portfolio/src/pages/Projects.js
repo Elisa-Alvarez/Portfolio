@@ -4,23 +4,23 @@ import '../less/project.less'
 export default function Projects (){
     return(
         <>
-        <div className="project-wrapper">
-        <h1>Projects</h1>
-        <div className="project_container">
+       <div className="project-wrapper">
+          <h1>Projects</h1>
+          <div className="project_container">
 
-          <div className="project_card">
-            <img src={require('../images/Cordial Chat app.PNG')} alt='The Lux Resort Hotel Website'/>
-            <h3><a target="_blank" href="https://theluxresort.netlify.app/">Crodial Chat</a></h3>
-            <div className="description">
-                  <p>A React.js Clone of Discord using Firebase as the backend and Google Sign In athentication.</p> 
-            </div>
-            <p className="date">Date: October 2020</p>
+            <div className="project_card">
+              <img src={require('../images/Cordial Chat app.PNG')} alt='The Lux Resort Hotel Website'/>
+              <h3><a target="_blank" href="https://theluxresort.netlify.app/">Crodial Chat</a></h3>
+              <div className="description">
+                    <p>A React.js Clone of Discord using Firebase as the backend and Google Sign In athentication.</p> 
+              </div>
+              <p className="date">Date: October 2020</p>
 
-            <div className="github">
-              <a target="_blank" href="https://github.com/Elisa-Alvarez/Cordial-Chat">
-                <img className="logo" src={require("../images/GitHub-Mark-Light-64px.png")} alt="github logo"/>
-              </a>
-            </div>
+              <div className="github">
+                <a target="_blank" href="https://github.com/Elisa-Alvarez/Cordial-Chat">
+                  <img className="logo" src={require("../images/GitHub-Mark-Light-64px.png")} alt="github logo"/>
+                </a>
+              </div>
           </div>
           
           <div className="project_card">

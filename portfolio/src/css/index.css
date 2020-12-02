@@ -115,10 +115,11 @@ video {
   transition: ease-in 0.5s;
 }
 body {
+  overflow: hidden;
+  overflow-y: auto;
   background-color: black;
   letter-spacing: 0.3rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  overflow: hidden;
 }
 section {
   width: 100%;
@@ -127,29 +128,34 @@ section {
 }
 .home-page {
   width: 100%;
-  height: 100%;
   scroll-behavior: smooth;
-  padding-bottom: 2.5rem;
-  overflow-y: auto;
 }
 .home-page .home-title {
+  width: calc(100% - 5vw);
   display: flex;
   align-content: center;
 }
-.home-page .home-title img {
-  width: 60%;
+.home-page .home-title .home-img {
+  width: 50vw;
   border-radius: 0.5rem;
 }
 .home-page .home-title .title {
   display: flex;
-  margin: auto;
+  width: 100%;
+  height: 90vh;
   flex-direction: column;
+  justify-items: center;
+  justify-content: center;
   align-items: center;
   color: aliceblue;
   font-size: 2rem;
 }
 .home-page .home-title .title h1 {
   font-size: 4rem;
+}
+.home-page .home-title .title p {
+  font-size: calc(11px + 0.8vw);
+  height: fit-content;
 }
 .home-page .home-title .title a {
   cursor: pointer;
@@ -161,7 +167,7 @@ section {
   border: 1px solid;
   box-shadow: 1px 2px #ffffff;
   color: aliceblue;
-  border-radius: 10px;
+  border-radius: 1rem;
   margin-top: 5%;
   padding-top: 0.5rem;
   transition: ease-in 0.3s;
@@ -173,18 +179,13 @@ section {
   color: black;
 }
 .home-page #section-about {
-  display: flex;
-  flex-direction: column;
+  width: 100vw;
+  height: 105vh;
   align-content: center;
   justify-content: space-evenly;
-  height: 100vh;
+  justify-items: center;
 }
 .home-page #section-about .about-me {
-  width: 100%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   color: white;
 }
@@ -193,8 +194,7 @@ section {
   margin-bottom: 1.5rem;
 }
 .home-page #section-about .about-me p {
-  line-height: 1rem;
-  width: 60%;
+  font-size: calc(10px + 2vh);
 }
 .home-page .recent-projects {
   margin-top: 0.2rem;
@@ -261,10 +261,6 @@ section {
   color: #ffffff;
   cursor: pointer;
 }
-.project-wrapper {
-  overflow-y: scroll;
-  height: 94vh;
-}
 h1 {
   text-align: center;
   font-size: 2rem;
@@ -284,6 +280,7 @@ h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
+  color: aliceblue;
 }
 .project_container .project_card a {
   color: white;
@@ -300,7 +297,8 @@ h1 {
   object-fit: cover;
 }
 .project_container .project_card .decription {
-  width: 50%;
+  width: 50vw;
+  font-size: calc(10px - 2vw);
 }
 .project_container .project_card .date {
   margin-top: 1.5rem;
@@ -314,6 +312,7 @@ h1 {
 .contact-container {
   color: aliceblue;
   text-align: center ;
+  width: 100%;
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80");
   background-repeat: no-repeat;
@@ -321,42 +320,47 @@ h1 {
 }
 .contact-container h1 {
   margin-top: 5rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
 }
 .contact-container .media {
-  height: 100%;
   width: 100%;
-  margin-top: 3.5rem;
-  padding: 1%;
+  height: 100%;
+  margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
 }
 .contact-container .media .social {
   margin-left: 1.8rem;
-  height: 20%;
-  width: 35%;
+  height: fit-content;
+  justify-content: center;
+  width: 46%;
 }
 .contact-container .media .social a {
   margin: 0;
   height: 10%;
 }
-.contact-container .media .social a img {
+.contact-container .media .social a .github {
   margin-top: 1rem;
-  width: 30%;
+  width: calc(25% + 1vw);
+}
+.contact-container .media .social a .linkedIn {
+  margin-top: 1rem;
+  width: calc(25% + 1vw);
 }
 .contact-container .media .social a .twitter {
-  margin-top: 2rem;
-  width: 22%;
-}
-.contact-container .media span {
-  flex: 0.5;
+  margin-top: 1rem;
+  width: calc(18% + 1vw);
 }
 .contact-container .media form {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: left;
-  width: 35%;
-  height: 55%;
+  width: 45%;
+  height: calc(55% + 5vh);
   border: 1px solid white;
 }
 .contact-container .media form label {
